@@ -1,154 +1,324 @@
-// // Linking a JavaScript File
-// let js = "amazing"; // Declares a variable 'js' and assigns the value "amazing" to it
-// console.log(40 + 8 + 23 - 10); // Prints the result of the arithmetic expression to the console
+/*
+////////////////////////////////////
+// Linking a JavaScript File
+let js = "amazing";
+console.log(40 + 8 + 23 - 10);
 
-// console.log("Jonas"); // Prints the string "Jonas" to the console
-// console.log(23); // Prints the number 23 to the console
+////////////////////////////////////
+// Values and Variables
+console.log("Jonas");
+console.log(23);
 
-// let firstName = "Matilda"; // Declares a variable 'firstName' and assigns the value "Matilda" to it
+let firstName = "Matilda";
 
-// console.log(firstName); // Prints the value of the variable 'firstName' to the console
-// console.log(firstName); // Prints the value of the variable 'firstName' to the console
-// console.log(firstName); // Prints the value of the variable 'firstName' to the console
+console.log(firstName);
+console.log(firstName);
+console.log(firstName);
 
-// let jonas_matilda = "JM"; // Declares a variable 'jonas_matilda' and assigns the value "JM" to it
-// let $function = 27; // Declares a variable '$function' and assigns the value 27 to it
+// Variable name conventions
+let jonas_matilda = "JM";
+let $function = 27;
 
-// let person = "jonas"; // Declares a variable 'person' and assigns the value "jonas" to it
-// let PI = 3.1415; // Declares a variable 'PI' and assigns the value 3.1415 to it
+let person = "jonas";
+let PI = 3.1415;
 
-// let myFirstJob = "Coder"; // Declares a variable 'myFirstJob' and assigns the value "Coder" to it
-// let myCurrentJob = "Teacher"; // Declares a variable 'myCurrentJob' and assigns the value "Teacher" to it
+let myFirstJob = "Coder";
+let myCurrentJob = "Teacher";
 
-// let job1 = "programmer"; // Declares a variable 'job1' and assigns the value "programmer" to it
-// let job2 = "teacher"; // Declares a variable 'job2' and assigns the value "teacher" to it
+let job1 = "programmer";
+let job2 = "teacher";
 
-// console.log(myFirstJob); // Prints the value of the variable 'myFirstJob' to the console
+console.log(myFirstJob);
 
-// let javascriptIsFun = true; // Declares a variable 'javascriptIsFun' and assigns the value true to it
-// console.log(javascriptIsFun); // Prints the value of the variable 'javascriptIsFun' to the console
+////////////////////////////////////
+// Data Types
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
 
-// javascriptIsFun = "YES!"; // Assigns the value 'YES!' to the variable 'javascriptIsFun'
-// console.log(typeof javascriptIsFun); // Prints the data type of the variable 'javascriptIsFun' to the console
+// console.log(typeof true);
+console.log(typeof javascriptIsFun);
+// console.log(typeof 23);
+// console.log(typeof 'Jonas');
 
-// let year; // Declares a variable 'year' without assigning a value to it
-// console.log(year); // Prints the value of the variable 'year' to the console (which is undefined)
+javascriptIsFun = 'YES!';
+console.log(typeof javascriptIsFun);
 
-// year = 1991; // Assigns the value 1991 to the variable 'year'
-// console.log(typeof year); // Prints the data type of the variable 'year' to the console
+let year;
+console.log(year);
+console.log(typeof year);
 
-// console.log(typeof null); // Prints the data type of null to the console (which is object)
+year = 1991;
+console.log(typeof year);
 
-// let age = 30; // Declares a variable 'age' and assigns the value 30 to it
-// age = 31; // Updates the value of the variable 'age' to 31
+console.log(typeof null);
 
-// const birthYear = 1991; // Declares a constant variable 'birthYear' and assigns the value 1991 to it
-// // birthYear = 1990; // Error: Cannot reassign a constant variable
-// // const job; // Error: Missing initializer in const declaration
+////////////////////////////////////
+// let, const and var
+let age = 30;
+age = 31;
 
-// var job = "programmer"; // Declares a variable 'job' and assigns the value 'programmer' to it
-// job = "teacher"; // Updates the value of the variable 'job' to 'teacher'
+const birthYear = 1991;
+// birthYear = 1990;
+// const job;
 
-// lastName = "Schmedtmann"; // Declares a variable 'lastName' and assigns the value 'Schmedtmann' to it
-// console.log(lastName); // Prints the value of the variable 'lastName' to the console
+var job = 'programmer';
+job = 'teacher'
 
-// const now = 2037; // Declares a constant variable 'now' and assigns the value 2037 to it
-// const ageJonas = now - 1991; // Declares a constant variable 'ageJonas' and assigns the result of the arithmetic expression to it
-// const ageSarah = now - 2018; // Declares a constant variable 'ageSarah' and assigns the result of the arithmetic expression to it
-// console.log(ageJonas, ageSarah); // Prints the values of the variables 'ageJonas' and 'ageSarah' to the console
+lastName = 'Schmedtmann';
+console.log(lastName);
 
-// console.log(ageJonas * 2, ageJonas / 10, 2 ** 3); // Prints the results of the arithmetic expressions to the console
+////////////////////////////////////
+// Basic Operators
+// Math operators
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
 
-// const firstName = "Jonas"; // Declares a constant variable 'firstName' and assigns the value 'Jonas' to it
-// const lastName = "Schmedtmann"; // Declares a constant variable 'lastName' and assigns the value 'Schmedtmann' to it
-// console.log(firstName + " " + lastName); // Prints the concatenation of the variables 'firstName' and 'lastName' to the console
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+// 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 
-// let x = 10 + 5; // Declares a variable 'x' and assigns the result of the arithmetic expression to it
-// x += 10; // Updates the value of the variable 'x' by adding 10 to it
-// x *= 4; // Updates the value of the variable 'x' by multiplying it by 4
-// x++; // Increments the value of the variable 'x' by 1
-// x--; // Decrements the value of the variable 'x' by 1
-// console.log(x); // Prints the value of the variable 'x' to the console
+const firstName = 'Jonas';
+const lastName = 'Schmedtmann';
+console.log(firstName + ' ' + lastName);
 
-// console.log(ageJonas > ageSarah); // Prints the result of the comparison to the console
-// console.log(ageSarah >= 18); // Prints the result of the comparison to the console
+// Assignment operators
+let x = 10 + 5; // 15
+x += 10; // x = x + 10 = 25
+x *= 4; // x = x * 4 = 100
+x++; // x = x + 1
+x--;
+x--;
+console.log(x);
 
-// const isFullAge = ageSarah >= 18; // Declares a constant variable 'isFullAge' and assigns the result of the comparison to it
-// console.log(now - 1991 > now - 2018); // Prints the result of the comparison to the console
+// Comparison operators
+console.log(ageJonas > ageSarah); // >, <, >=, <=
+console.log(ageSarah >= 18);
 
-// console.log(now - 1991 > now - 2018); // Prints the result of the comparison to the console
+const isFullAge = ageSarah >= 18;
 
-// let x, y; // Declares variables 'x' and 'y' without assigning values to them
-// x = y = 25 - 10 - 5; // Assigns the same value to variables 'x' and 'y'
-// console.log(x, y); // Prints the values of variables 'x' and 'y' to the console
+console.log(now - 1991 > now - 2018);
 
-// const averageAge = (ageJonas + ageSarah) / 2; // Declares a constant variable 'averageAge' and assigns the result of the arithmetic expression to it
-// console.log(ageJonas, ageSarah, averageAge); // Prints the values of variables 'ageJonas', 'ageSarah', and 'averageAge' to the console
+////////////////////////////////////
+// Operator Precedence
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
 
-// // Strings and Template Literals
+console.log(now - 1991 > now - 2018);
 
-// const firstName = "Jonas"; // Declares a constant variable 'firstName' and assigns the value 'Jonas' to it
-// const job = "teacher"; // Declares a constant variable 'job' and assigns the value 'teacher' to it
-// const birthYear = 1991; // Declares a constant variable 'birthYear' and assigns the value 1991 to it
-// const year = 2037; // Declares a constant variable 'year' and assigns the value 2037 to it
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10, x = 10
+console.log(x, y);
 
-// const jonas =
-//   "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!"; // Concatenates strings and variables to form a sentence
-// console.log(jonas); // Prints the value of the variable 'jonas' to the console
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
+*/
 
-// const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`; // Uses template literals to form a sentence
-// console.log(jonasNew); // Prints the value of the variable 'jonasNew' to the console
+////////////////////////////////////
+// Coding Challenge #1
 
-// console.log(`Just a regular string...`); // Prints a string to the console
+/*
+Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter).
 
-// console.log(
-//   "String with \n\
-// multiple \n\
-// lines"
-// ); // Prints a string with multiple lines to the console
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs using the formula (you can even implement both versions)
+3. Create a boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
 
-// console.log(`String
-// multiple
-// lines`); // Prints a string with multiple lines to the console
+TEST DATA 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
 
-// // Taking Decisions: if / else Statements
+GOOD LUCK 😀
+*/
 
-// const age = 15; // Declares a constant variable 'age' and assigns the value 15 to it
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
 
-// if (age >= 18) {
-//   // Checks if the condition is true
-//   console.log("Sarah can start driving license 🚗"); // Prints a message to the console
+/*
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+const markHigherBMI = BMIMark > BMIJohn;
+
+console.log(BMIMark, BMIJohn, markHigherBMI);
+
+////////////////////////////////////
+// Strings and Template Literals
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(jonasNew);
+
+console.log(`Just a regular string...`);
+
+console.log('String with \n\
+multiple \n\
+lines');
+
+console.log(`String
+multiple
+lines`);
+
+
+////////////////////////////////////
+// Taking Decisions: if / else Statements
+const age = 15;
+
+if (age >= 18) {
+  console.log('Sarah can start driving license 🚗');
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+}
+
+const birthYear = 2012;
+
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+*/
+
+////////////////////////////////////
+// Coding Challenge #2
+
+/*
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
+
+1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
+
+HINT: Use an if/else statement 😉
+
+GOOD LUCK 😀
+*/
+
+/*
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+} else {
+  console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`)
+}
+
+////////////////////////////////////
+// Type Conversion and Coercion
+
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// type coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+
+let n = '1' + 1; // '11'
+n = n - 1;
+console.log(n);
+
+////////////////////////////////////
+// Truthy and Falsy Values
+
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 100;
+if (money) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log('You should get a job!');
+}
+
+let height = 0;
+if (height) {
+  console.log('YAY! Height is defined');
+} else {
+  console.log('Height is UNDEFINED');
+}
+
+////////////////////////////////////
+// Equality Operators: == vs. ===
+const age = '18';
+if (age === 18) console.log('You just became an adult :D (strict)');
+
+if (age == 18) console.log('You just became an adult :D (loose)');
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) { // 22 === 23 -> FALSE
+  console.log('Cool! 23 is an amzaing number!')
+} else if (favourite === 7) {
+  console.log('7 is also a cool number')
+} else if (favourite === 9) {
+  console.log('9 is also a cool number')
+} else {
+  console.log('Number is not 23 or 7 or 9')
+}
+
+if (favourite !== 23) console.log('Why not 23?');
+
+////////////////////////////////////
+// Logical Operators
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log('Sarah is able to drive!');
 // } else {
-//   const yearsLeft = 18 - age; // Declares a constant variable 'yearsLeft' and assigns the result of the arithmetic expression to it
-//   console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`); // Prints a message to the console
+//   console.log('Someone else should drive...');
 // }
 
-// const birthYear = 2012; // Declares a constant variable 'birthYear' and assigns the value 2012 to it
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
 
-// let century; // Declares a variable 'century' without assigning a value to it
-// if (birthYear <= 2000) {
-//   // Checks if the condition is true
-//   century = 20; // Assigns the value 20 to the variable 'century'
-// } else {
-//   century = 21; // Assigns the value 21 to the variable 'century'
-// }
-// console.log(century); // Prints the value of the variable 'century' to the console
-
-// // Type Conversion and Coercion
-
-// const inputYear = "1991"; // Declares a constant variable 'inputYear' and assigns the value '1991' to it
-// console.log(Number(inputYear), inputYear); // Converts the string to a number and prints both the converted value and the original string to the console
-// console.log(Number(inputYear) + 18); // Converts the string to a number and performs an arithmetic operation
-
-// console.log(Number("Jonas")); // Attempts to convert a non-numeric string to a number (returns NaN)
-// console.log(typeof NaN); // Prints the data type of NaN to the console
-
-// console.log(String(23), 23); // Converts the number to a string and prints both the converted value and the original number to the console
-
-// console.log("I am " + 23 + " years old"); // Concatenates strings and a number to form a sentence
-// console.log("23" - "10" - 3); // Converts the strings to numbers and performs arithmetic operations
-// console.log("23" / "2"); // Converts the strings to numbers and performs an arithmetic operation
-
-// let n = "1" + 1; // Concatenates a string and a number
-// n = n - 1; // Converts the string to a number and performs an arithmetic operation
-// console.log(n); // Prints the value of the variable 'n' to the console
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log('Sarah is able to drive!');
+} else {
+  console.log('Someone else should drive...');
+}
+*/
