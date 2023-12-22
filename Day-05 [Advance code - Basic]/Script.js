@@ -147,14 +147,17 @@ TEST DATA 2: [12, 5, -5, 0, 4]
 const data1 = [17, 21, 23];
 const data2 = [12, 5, -5, 0, 4];
 
-console.log(`... ${data1[0]}ºC ... ${data1[1]}ºC ... ${data1[2]}ºC ...`);
-
 const printForecast = function (arr) {
-  let str = '';
-  for (let i = 0; i < arr.length; i++) {
-    str += `${arr[i]}ºC in ${i + 1} days ... `;
+  let forecastString = '';
+  
+  for (let [index, temperature] of arr.entries()) {
+    forecastString += `... ${temperature}ºC in ${index + 1} day(s)`;
   }
-  console.log('...' + str);
+
+  console.log(forecastString);
 };
+
+// Test with the provided data
 printForecast(data1);
+printForecast(data2);
 */

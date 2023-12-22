@@ -37,16 +37,7 @@ const john = {
 mark.calcBMI();
 john.calcBMI();
 
-console.log(mark.bmi, john.bmi);
-
-// "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
-
-if (mark.bmi > john.bmi) {
-  console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
-} else if (john.bmi > mark.bmi) {
-  console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
-}
-
+console.log(`${john.fullName}'s BMI (${john.bmi}) is ${john.bmi > mark.bmi ? 'higher' : 'lower'} than ${mark.fullName}'s BMI (${mark.bmi})`);
 
 ///////////////////////////////////////
 // Iteration: The for Loop
@@ -192,29 +183,44 @@ GOOD LUCK 😀
 */
 
 /*
-const calcTip = function (bill) {
+// Function to calculate tip based on bill amount
+const calcTip = function(bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
+
+// Test bills array
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+// Arrays to store tips and totals
 const tips = [];
 const totals = [];
 
+// Calculate tips and totals using a for loop
 for (let i = 0; i < bills.length; i++) {
   const tip = calcTip(bills[i]);
-  tips.push(tip);
-  totals.push(tip + bills[i]);
+  tips.push(tip); // Add tip to the tips array
+  totals.push(tip + bills[i]); // Add total to the totals array
 }
-console.log(bills, tips, totals);
 
-const calcAverage = function (arr) {
+// Display bills, tips, and totals
+console.log("Bills:", bills);
+console.log("Tips:", tips);
+console.log("Totals:", totals);
+
+// Function to calculate the average of an array
+const calcAverage = function(arr) {
   let sum = 0;
+
+  // Loop to calculate the sum of array elements
   for (let i = 0; i < arr.length; i++) {
-    // sum = sum + arr[i];
     sum += arr[i];
   }
+
+  // Calculate and return the average
   return sum / arr.length;
 }
-console.log(calcAverage([2, 3, 7]));
-console.log(calcAverage(totals));
-console.log(calcAverage(tips));
+
+// Display average of totals and tips
+console.log("Average of Totals:", calcAverage(totals));
+console.log("Average of Tips:", calcAverage(tips));
 */

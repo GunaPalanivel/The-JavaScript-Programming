@@ -136,15 +136,11 @@ GOOD LUCK 😀
 */
 
 /*
+// Function to calculate average of 3 scores
 const calcAverage = (a, b, c) => (a + b + c) / 3;
-console.log(calcAverage(3, 4, 5));
 
-// Test 1
-let scoreDolphins = calcAverage(44, 23, 71);
-let scoreKoalas = calcAverage(65, 54, 49);
-console.log(scoreDolphins, scoreKoalas);
-
-const checkWinner = function (avgDolphins, avgKoalas) {
+// Function to check the winner based on average scores
+const checkWinner = (avgDolphins, avgKoalas) => {
   if (avgDolphins >= 2 * avgKoalas) {
     console.log(`Dolphins win 🏆 (${avgDolphins} vs. ${avgKoalas})`);
   } else if (avgKoalas >= 2 * avgDolphins) {
@@ -152,17 +148,23 @@ const checkWinner = function (avgDolphins, avgKoalas) {
   } else {
     console.log('No team wins...');
   }
-}
-checkWinner(scoreDolphins, scoreKoalas);
+};
 
-checkWinner(576, 111);
+// Test Data 1
+const dolphinsScores1 = [44, 23, 71];
+const koalasScores1 = [65, 54, 49];
+const scoreDolphins1 = calcAverage(...dolphinsScores1);
+const scoreKoalas1 = calcAverage(...koalasScores1);
+console.log(scoreDolphins1, scoreKoalas1);
+checkWinner(scoreDolphins1, scoreKoalas1);
 
-// Test 2
-scoreDolphins = calcAverage(85, 54, 41);
-scoreKoalas = calcAverage(23, 34, 27);
-console.log(scoreDolphins, scoreKoalas);
-checkWinner(scoreDolphins, scoreKoalas);
-
+// Test Data 2
+const dolphinsScores2 = [85, 54, 41];
+const koalasScores2 = [23, 34, 27];
+const scoreDolphins2 = calcAverage(...dolphinsScores2);
+const scoreKoalas2 = calcAverage(...koalasScores2);
+console.log(scoreDolphins2, scoreKoalas2);
+checkWinner(scoreDolphins2, scoreKoalas2);
 
 ///////////////////////////////////////
 // Introduction to Arrays
@@ -258,17 +260,24 @@ GOOD LUCK 😀
 */
 
 /*
-const calcTip = function (bill) {
+// Function to calculate tip based on bill value
+function calcTip(bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
-// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
+// Test data: bills array
 const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
-console.log(bills, tips, totals);
+// Calculate tips for each bill using the calcTip function
+const tips = bills.map(calcTip);
 
+// Calculate total values (bill + tip) for each bill
+const totals = bills.map((bill, index) => bill + tips[index]);
+
+// Display the results
+console.log("Bills:", bills);
+console.log("Tips:", tips);
+console.log("Totals:", totals);
 
 ///////////////////////////////////////
 // Introduction to Objects

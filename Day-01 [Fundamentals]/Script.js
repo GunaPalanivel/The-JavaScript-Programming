@@ -131,22 +131,37 @@ TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1
 GOOD LUCK 😀
 */
 
-// const massMark = 78;
-// const heightMark = 1.69;
-// const massJohn = 92;
-// const heightJohn = 1.95;
-
 /*
-const massMark = 95;
-const heightMark = 1.88;
-const massJohn = 85;
-const heightJohn = 1.76;
+// Test Data 1
+const massMark1 = 78;
+const heightMark1 = 1.69;
+const massJohn1 = 92;
+const heightJohn1 = 1.95;
 
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-const markHigherBMI = BMIMark > BMIJohn;
+const BMIMark1 = massMark1 / (heightMark1 ** 2);
+const BMIJohn1 = massJohn1 / (heightJohn1 * heightJohn1);
+const markHigherBMI1 = BMIMark1 > BMIJohn1;
 
-console.log(BMIMark, BMIJohn, markHigherBMI);
+console.log("Test Data 1:");
+console.log("Mark's BMI:", BMIMark1);
+console.log("John's BMI:", BMIJohn1);
+console.log("Is Mark's BMI higher than John's? ", markHigherBMI1);
+console.log("\n");
+
+// Test Data 2
+const massMark2 = 95;
+const heightMark2 = 1.88;
+const massJohn2 = 85;
+const heightJohn2 = 1.76;
+
+const BMIMark2 = massMark2 / (heightMark2 ** 2);
+const BMIJohn2 = massJohn2 / (heightJohn2 * heightJohn2);
+const markHigherBMI2 = BMIMark2 > BMIJohn2;
+
+console.log("Test Data 2:");
+console.log("Mark's BMI:", BMIMark2);
+console.log("John's BMI:", BMIJohn2);
+console.log("Is Mark's BMI higher than John's? ", markHigherBMI2);
 
 ////////////////////////////////////
 // Strings and Template Literals
@@ -214,19 +229,18 @@ const heightMark = 1.69;
 const massJohn = 92;
 const heightJohn = 1.95;
 
-// const massMark = 95;
-// const heightMark = 1.88;
-// const massJohn = 85;
-// const heightJohn = 1.76;
+const BMIMark = massMark / (heightMark ** 2);
+const BMIJohn = massJohn / (heightJohn ** 2);
 
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-console.log(BMIMark, BMIJohn);
+console.log(`Mark's BMI is ${BMIMark.toFixed(1)}.`);
+console.log(`John's BMI is ${BMIJohn.toFixed(1)}.`);
 
 if (BMIMark > BMIJohn) {
-  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+  console.log("Mark's BMI is higher than John's!");
+} else if (BMIJohn > BMIMark) {
+  console.log("John's BMI is higher than Mark's!");
 } else {
-  console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`)
+  console.log("Both Mark and John have the same BMI.");
 }
 
 ////////////////////////////////////

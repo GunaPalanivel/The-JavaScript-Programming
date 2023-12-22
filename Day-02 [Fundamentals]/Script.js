@@ -18,28 +18,25 @@ GOOD LUCK 😀
 */
 
 /*
-// const scoreDolphins = (96 + 108 + 89) / 3;
-// const scoreKoalas = (88 + 91 + 110) / 3;
-// console.log(scoreDolphins, scoreKoalas);
+// Function to calculate average score
+function calculateAverage(scores) {
+  return (scores[0] + scores[1] + scores[2]) / 3;
+}
 
-// if (scoreDolphins > scoreKoalas) {
-//   console.log('Dolphins win the trophy 🏆');
-// } else if (scoreKoalas > scoreDolphins) {
-//   console.log('Koalas win the trophy 🏆');
-// } else if (scoreDolphins === scoreKoalas) {
-//   console.log('Both win the trophy!');
-// }
+// Test data for Dolphins and Koalas
+const dolphinsScores = [96, 108, 89];
+const koalasScores = [88, 91, 110];
 
-// BONUS 1
-const scoreDolphins = (97 + 112 + 80) / 3;
-const scoreKoalas = (109 + 95 + 50) / 3;
-console.log(scoreDolphins, scoreKoalas);
+// Calculate average scores
+const avgDolphins = calculateAverage(dolphinsScores);
+const avgKoalas = calculateAverage(koalasScores);
 
-if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+// Check and print the winner
+if (avgDolphins > avgKoalas && avgDolphins >= 100) {
   console.log('Dolphins win the trophy 🏆');
-} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+} else if (avgKoalas > avgDolphins && avgKoalas >= 100) {
   console.log('Koalas win the trophy 🏆');
-} else if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+} else if (avgDolphins === avgKoalas && avgDolphins >= 100 && avgKoalas >= 100) {
   console.log('Both win the trophy!');
 } else {
   console.log('No one wins the trophy 😭');
@@ -138,6 +135,9 @@ GOOD LUCK 😀
 
 /*
 const bill = 430;
-const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+const totalValue = bill + tip;
+
+console.log(`The bill was $${bill}, the tip was $${tip.toFixed(2)}, and the total value is $${totalValue.toFixed(2)}`);
+
 */
