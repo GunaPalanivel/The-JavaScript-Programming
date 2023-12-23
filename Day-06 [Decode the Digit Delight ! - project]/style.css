@@ -1,0 +1,190 @@
+/* Importing the "Press Start 2P" font from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+/* Resetting margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Setting the base font size for the document to 62.5% (10px) */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/* Styling the body element */
+body {
+  /* Setting the font family to "Press Start 2P" */
+  font-family: "Press Start 2P", sans-serif;
+  /* Setting the text color to #eee (light gray) */
+  color: #eee;
+  /* Setting the background color to #222 (dark gray) */
+  background-color: #222;
+  /* Uncomment the line below to change the background color to #60b347 (light green) */
+  /* background-color: #60b347; */
+}
+
+/* Styling the header element */
+header {
+  /* Setting the position to relative */
+  position: relative;
+  /* Setting the height to 35% of the viewport height */
+  height: 35vh;
+  /* Adding a bottom border with a thickness of 7px and color #eee (light gray) */
+  border-bottom: 7px solid #eee;
+}
+
+/* Styling the main element */
+main {
+  /* Setting the height to 65% of the viewport height */
+  height: 65vh;
+  /* Setting the text color to #eee (light gray) */
+  color: #eee;
+  /* Displaying the flex container */
+  display: flex;
+  /* Aligning the flex items vertically at the center */
+  align-items: center;
+  /* Distributing the flex items evenly along the main axis */
+  justify-content: space-around;
+}
+
+/* Styling the left column */
+.left {
+  /* Setting the width to 52rem */
+  width: 52rem;
+  /* Displaying the flex items in a column */
+  flex-direction: column;
+  /* Aligning the flex items vertically at the center */
+  align-items: center;
+}
+
+/* Styling the right column */
+.right {
+  /* Setting the width to 52rem */
+  width: 52rem;
+  /* Setting the font size to 2rem */
+  font-size: 2rem;
+}
+
+/* Styling the h1 element */
+h1 {
+  /* Setting the font size to 4rem */
+  font-size: 4rem;
+  /* Aligning the text in the center */
+  text-align: center;
+  /* Positioning the element absolutely */
+  position: absolute;
+  /* Setting the width to 100% of the parent element */
+  width: 100%;
+  /* Positioning the element 52% from the top and 50% from the left */
+  top: 52%;
+  left: 50%;
+  /* Translating the element 50% to the left and 50% to the top */
+  transform: translate(-50%, -50%);
+}
+
+/* Styling the number element */
+.number {
+  /* Setting the background color to #eee (light gray) */
+  background: #eee;
+  /* Setting the text color to #333 (dark gray) */
+  color: #333;
+  /* Setting the font size to 6rem */
+  font-size: 6rem;
+  /* Setting the width to 15rem */
+  width: 15rem;
+  /* Adding padding of 3rem at the top and bottom and 0rem at the left and right */
+  padding: 3rem 0rem;
+  /* Aligning the text in the center */
+  text-align: center;
+  /* Positioning the element absolutely */
+  position: absolute;
+  /* Positioning the element at the bottom and 50% from the left */
+  bottom: 0;
+  left: 50%;
+  /* Translating the element 50% to the left and 50% to the bottom */
+  transform: translate(-50%, 50%);
+}
+
+/* Styling the between element */
+.between {
+  /* Setting the font size to 1.4rem */
+  font-size: 1.4rem;
+  /* Positioning the element absolutely */
+  position: absolute;
+  /* Positioning the element 2rem from the top and 2rem from the right */
+  top: 2rem;
+  right: 2rem;
+}
+
+/* Styling the again element */
+.again {
+  /* Positioning the element absolutely */
+  position: absolute;
+  /* Positioning the element 2rem from the top and 2rem from the left */
+  top: 2rem;
+  left: 2rem;
+}
+
+/* Styling the guess element */
+.guess {
+  /* Setting the background color to none */
+  background: none;
+  /* Adding a border with a thickness of 4px and color #eee (light gray) */
+  border: 4px solid #eee;
+  /* Using the same font family as the parent element */
+  font-family: inherit;
+  /* Using the same text color as the parent element */
+  color: inherit;
+  /* Setting the font size to 5rem */
+  font-size: 5rem;
+  /* Adding padding of 2.5rem at the top and bottom and 0rem at the left and right */
+  padding: 2.5rem;
+  /* Setting the width to 25rem */
+  width: 25rem;
+  /* Aligning the text in the center */
+  text-align: center;
+  /* Displaying the element as a block */
+  display: block;
+  /* Adding a bottom margin of 3rem */
+  margin-bottom: 3rem;
+}
+
+/* Styling the btn class */
+.btn {
+  /* Removing the border */
+  border: none;
+  /* Setting the background color to #eee (light gray) */
+  background-color: #eee;
+  /* Setting the text color to #222 (dark gray) */
+  color: #222;
+  /* Setting the font size to 2rem */
+  font-size: 2rem;
+  /* Using the same font family as the parent element */
+  font-family: inherit;
+  /* Adding padding of 2rem at the top and bottom and 3rem at the left and right */
+  padding: 2rem 3rem;
+  /* Changing the cursor to a pointer on hover */
+  cursor: pointer;
+}
+
+/* Changing the background color of the btn class on hover */
+.btn:hover {
+  background-color: #ccc;
+}
+
+/* Styling the message class */
+.message {
+  /* Adding a bottom margin of 8rem */
+  margin-bottom: 8rem;
+  /* Setting the height to 3rem */
+  height: 3rem;
+}
+
+/* Styling the label-score class */
+.label-score {
+  /* Adding a bottom margin of 2rem */
+  margin-bottom: 2rem;
+}

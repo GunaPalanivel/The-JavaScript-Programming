@@ -2,34 +2,50 @@
 <html lang="en">
 
 <head>
+    <!-- Set the character encoding to UTF-8 -->
     <meta charset="UTF-8" />
+    <!-- Set the viewport to control the layout on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Specify the version of Internet Explorer to use -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Link the external CSS file -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Set the favicon for the website -->
     <link rel="icon" href="image/question_icon.png">
+    <!-- Set the title of the webpage -->
     <title>Decode the Digit Delight!</title>
 </head>
 
 <body>
     <header>
+        <!-- Display the main heading of the webpage -->
         <h1>Decode the Digit Delight!</h1>
+        <!-- Display a description between the main heading and buttons -->
         <p class="between">(Between 1 and 20)</p>
+        <!-- Display a button with the "Again!" label -->
         <button class="btn again">Again!</button>
+        <!-- Display a div element with a question mark as the content -->
         <div class="number">?</div>
     </header>
     <main>
         <section class="left">
+            <!-- Display an input field for the user to enter a number -->
             <input type="number" class="guess" />
+            <!-- Display a button with the "Check!" label -->
             <button class="btn check">Check!</button>
         </section>
         <section class="right">
+            <!-- Display a message for the user to start guessing -->
             <p class="message">Start guessing...</p>
+            <!-- Display the current score with a label -->
             <p class="label-score">💯 Score: <span class="score">20</span></p>
+            <!-- Display the highscore with a label -->
             <p class="label-highscore">
                 🥇 Highscore: <span class="highscore">0</span>
             </p>
         </section>
     </main>
+    <!-- Link the external JavaScript file -->
     <script src="script.js"></script>
 </body>
 
